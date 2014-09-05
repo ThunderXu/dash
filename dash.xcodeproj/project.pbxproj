@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A446B519B92D0300EF4D64 /* ItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A446B419B92D0300EF4D64 /* ItemFactory.m */; };
 		84BFCE1219B9270E00D7316F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFCE1119B9270E00D7316F /* Player.m */; };
 		84BFCE1D19B92B7D00D7316F /* FireBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFCE1C19B92B7D00D7316F /* FireBall.m */; };
 		9E3F460119B9157000FEEC75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3F460019B9157000FEEC75 /* QuartzCore.framework */; };
@@ -131,14 +130,12 @@
 		9E3F478F19B9157300FEEC75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F478E19B9157300FEEC75 /* main.m */; };
 		9E3F479219B9157300FEEC75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F479119B9157300FEEC75 /* AppDelegate.m */; };
 		9E3F479519B9157300FEEC75 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F479419B9157300FEEC75 /* HelloWorldLayer.m */; };
+		9E3F47A619B9396E00FEEC75 /* ItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F47A519B9396E00FEEC75 /* ItemFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84A446B419B92D0300EF4D64 /* ItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemFactory.m; sourceTree = "<group>"; };
 		84BFCE1019B9270E00D7316F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Dash/Gameplay/Player.h; sourceTree = "<group>"; };
 		84BFCE1119B9270E00D7316F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = ../Dash/Gameplay/Player.m; sourceTree = "<group>"; };
-		84BFCE1519B9275600D7316F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Dash/Item.h; sourceTree = SOURCE_ROOT; };
-		84BFCE1819B92A7E00D7316F /* ItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemFactory.h; path = Dash/ItemFactory.h; sourceTree = SOURCE_ROOT; };
 		84BFCE1B19B92B7D00D7316F /* FireBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FireBall.h; path = Dash/Items/FireBall.h; sourceTree = SOURCE_ROOT; };
 		84BFCE1C19B92B7D00D7316F /* FireBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FireBall.m; path = Dash/Items/FireBall.m; sourceTree = SOURCE_ROOT; };
 		9E3F45FD19B9157000FEEC75 /* dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +405,9 @@
 		9E3F479119B9157300FEEC75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9E3F479319B9157300FEEC75 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		9E3F479419B9157300FEEC75 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		9E3F47A319B9396E00FEEC75 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Items/Item.h; sourceTree = "<group>"; };
+		9E3F47A419B9396E00FEEC75 /* ItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemFactory.h; path = Items/ItemFactory.h; sourceTree = "<group>"; };
+		9E3F47A519B9396E00FEEC75 /* ItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemFactory.m; path = Items/ItemFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,9 +439,9 @@
 		84BFCE1419B9274700D7316F /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				84BFCE1819B92A7E00D7316F /* ItemFactory.h */,
-				84A446B419B92D0300EF4D64 /* ItemFactory.m */,
-				84BFCE1519B9275600D7316F /* Item.h */,
+				9E3F47A319B9396E00FEEC75 /* Item.h */,
+				9E3F47A419B9396E00FEEC75 /* ItemFactory.h */,
+				9E3F47A519B9396E00FEEC75 /* ItemFactory.m */,
 				84BFCE1B19B92B7D00D7316F /* FireBall.h */,
 				84BFCE1C19B92B7D00D7316F /* FireBall.m */,
 			);
@@ -966,7 +966,7 @@
 				9E3F465F19B9157000FEEC75 /* CCDrawNode.m in Sources */,
 				9E3F46F119B9157200FEEC75 /* CCTransitionPageTurn.m in Sources */,
 				9E3F462219B9157000FEEC75 /* CCActionCatmullRom.m in Sources */,
-				84A446B519B92D0300EF4D64 /* ItemFactory.m in Sources */,
+				9E3F47A619B9396E00FEEC75 /* ItemFactory.m in Sources */,
 				9E3F469919B9157100FEEC75 /* CCParticleSystem.m in Sources */,
 				9E3F46EE19B9157200FEEC75 /* CCTransition.m in Sources */,
 				9E3F469619B9157100FEEC75 /* CCParticleExamples.m in Sources */,
